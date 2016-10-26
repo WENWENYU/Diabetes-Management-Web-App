@@ -1,0 +1,34 @@
+application: gmonitor-py
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /jsPDF
+  static_dir: js
+
+- url: /assets/css
+  static_dir: static/assets/css
+
+- url: /assets/img
+  static_dir: static/assets/img
+
+- url: /assets/fonts
+  static_dir: static/assets/fonts
+
+- url: /assets/js
+  static_dir: static/assets/js
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "latest"
+- name: jinja2
+  version: latest

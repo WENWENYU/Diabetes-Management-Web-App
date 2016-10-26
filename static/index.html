@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Glucose Monitor</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+        <style>
+      .main-content {
+        margin: 50px;
+      }
+      .form-control {
+          display: inline !important;
+          width: 200px !important;
+          margin-bottom:3px !important;
+      }
+
+      .form {
+        text-align: center;
+      }
+
+      .form-group {
+          text-align: center;
+          padding-bottom: 25px;
+      }
+
+      #history {
+          margin: 0 auto;
+          width: 500px;
+      }
+
+      a.close {
+        float: right;
+      }
+    </style>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </head>
+
+  <body style="text-align:center;">
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-fixed">
+          <div class="container-fluid">
+              <div class="navbar-header" style="width:100%">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"></a>
+                </div>
+              <div class="collapse navbar-collapse">
+              </div>
+          </div>
+      </nav>
+      <div class="form-group">
+        <h1>Glucose Monitor</h1>
+        <form role="form" action="/dashboard" method="get">
+          <label>
+            <span>Username:</span>
+            <input type="text" class="form-control" placeholder="Username" name="username" />
+          </label>
+          <br>
+          <input type="submit" class="btn btn btn-primary" value="Login"></input>
+        </form>
+      </div>
+      <hr>
+    </div>
+  </body>
+</html>
